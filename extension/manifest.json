@@ -1,0 +1,28 @@
+{
+  "name": "PostureReminder",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "author": "Adam Gonen",
+  "description": "Reminders to correct your posture periodically.",
+  "icons": { "128": "/icons/icon128.png" },
+  "permissions": [
+    "background",
+    "notifications",
+    "idle",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "PostureReminder",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

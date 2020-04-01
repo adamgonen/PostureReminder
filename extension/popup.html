@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+<!--    <link rel="stylesheet" type="text/css" href="formreset.css">-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!--    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">-->
+<!--    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">-->
+    <title>PostureReminder</title>
+</head>
+<body>
+    <div id="root">
+        <div class="header">
+            <img height="128" width="128" src="icons/icon128.png">
+            <h1>Posture Reminder</h1>
+        </div>
+        <div class="switchBox">
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="selector">
+                <label for="time">Remind me</label>
+                <select id="time" class="select">
+                    <option value="15">every 15 minutes</option>
+                    <option value="30">every 30 minutes</option>
+                    <option selected="selected" value="60">every hour</option>
+                    <option value="120">every 2 hours</option>
+                    <option value="1000">randomly</option>
+                </select>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
