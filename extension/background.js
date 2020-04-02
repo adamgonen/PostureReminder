@@ -8,8 +8,8 @@ function makeNotification() {
   chrome.notifications.create({
     type: 'basic',
     iconUrl: 'icons/icon128.png',
-    title: 'Don\'t forget!',
-    message: 'Correct Posture!'
+    title: 'Posture Reminder',
+    message: 'Correct your posture!'
   }, (notificationId) => {
     makeOrDeleteNotification()
   });
