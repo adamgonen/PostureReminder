@@ -33,7 +33,7 @@ const makeOrDeleteNotification = () => {
     }
     currentNotification = window.setTimeout(
       makeNotification,
-      parseInt(time) * 1000
+      parseInt(time) * 1000 * 60
     );
   } else {
     window.clearTimeout(currentNotification);
