@@ -9,8 +9,10 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
+    "alarms",
     "background",
-    "notifications"
+    "notifications",
+    "storage"
   ],
   "background": {
     "scripts": [
